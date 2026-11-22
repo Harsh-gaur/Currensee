@@ -7,6 +7,8 @@ An offline-first Python prototype for a FinTech project. It turns the project br
 - **How to exchange:** converts the currency market into a graph and uses Bellman-Ford with `-log(rate)` edge weights to find the route with the highest fee-adjusted return.
 - **Arbitrage check:** detects a negative cycle only if it exceeds a 0.10% margin after the assumed per-leg fee.
 
+The Streamlit dashboard includes 27 currencies, a currency explorer, trend chart, forecast range, fee-aware provider comparison, and route/arbitrage explanations.
+
 ## Run it
 
 No package installation or API key is needed for the offline demonstration.
