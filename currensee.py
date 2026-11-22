@@ -232,7 +232,7 @@ def demo_history() -> list[float]:
 
 def demo_rates() -> dict[str, dict[str, float]]:
     """Build a consistent all-pairs matrix from destination units per USD."""
-    per_usd = {"USD": 1.0, "EUR": 0.9200, "GBP": 0.7900, "INR": 83.9400, "JPY": 150.2000}
+    per_usd = {"USD": 1.0, "EUR": 0.9200, "GBP": 0.7900, "INR": 83.9400, "JPY": 150.2000, "CAD": 1.3500, "AUD": 1.5200, "CHF": 0.8800, "CNY": 7.1800, "SGD": 1.3400, "HKD": 7.8200, "NZD": 1.6400, "SEK": 10.4500, "NOK": 10.6000, "DKK": 6.8600, "PLN": 3.9800, "CZK": 23.2000, "HUF": 360.0000, "MXN": 17.1000, "BRL": 5.0200, "ZAR": 18.1000, "AED": 3.6700, "SAR": 3.7500, "THB": 35.7000, "KRW": 1330.0000, "IDR": 15700.0000, "TRY": 32.1000}
     return {
         base: {quote: per_usd[quote] / per_usd[base] for quote in per_usd}
         for base in per_usd
